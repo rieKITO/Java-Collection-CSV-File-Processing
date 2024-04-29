@@ -17,7 +17,7 @@ import java.util.List;
 public class CSVPersonDataReader {
     private final String csvFilePath;
     private final char separator;
-    private List<Person> personList;
+    private final List<Person> personList;
 
     public CSVPersonDataReader(String csvFilePath, char separator) {
         this.csvFilePath = csvFilePath;
