@@ -3,7 +3,7 @@ package org.example;
 import java.time.LocalDate;
 
 public class Person {
-    private int id;
+    final private int id;
     private String name;
     private char sex;
     private String department;
@@ -24,5 +24,29 @@ public class Person {
         this.department = department;
         this.salary = salary;
         this.birthDate = birthDate;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public char getSex() {
+        return sex;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public LocalDate getBirthDate() {
+        return birthDate;
     }
 }
